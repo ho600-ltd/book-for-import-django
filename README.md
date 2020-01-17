@@ -1,4 +1,4 @@
-A book about "import django for practical problem solving"(zh_Hant version)
+A book about "import django for practical problem solving"(zh_TW version)
 ===============================================================================
 
 [![文件生成狀態](https://readthedocs.org/projects/book-for-import-django/badge/?version=master)](https://book-for-import-django.readthedocs.io/zh_TW/master/?badge=master)
