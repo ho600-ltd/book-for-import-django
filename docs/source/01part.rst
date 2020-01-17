@@ -57,3 +57,5 @@
 .. include:: 01part/developing_env_initialization.rst
 
 .. include:: 01part/project_initialization.rst
+
+.. include:: 01part/django_admin_operation.rst

@@ -10,6 +10,7 @@
 * Python3
 * Django-2.2.x
 * virtualenv
+* django-guardian
 * django-restframework
 
 VSC 對我而言，就是一個方便、高級的 Vim 編輯器，可以集檔案管理樹、 vim 編輯器、Shell console 在同一個畫面。
