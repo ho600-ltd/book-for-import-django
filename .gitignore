@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .vscode/
+examples-of-book-for-import-django/
