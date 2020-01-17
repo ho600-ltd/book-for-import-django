@@ -61,3 +61,5 @@
 .. include:: 01part/django_admin_operation.rst
 
 .. include:: 01part/django_orm.rst
+
+.. include:: 01part/model_design.rst
