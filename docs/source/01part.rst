@@ -63,3 +63,5 @@
 .. include:: 01part/django_orm.rst
 
 .. include:: 01part/model_design.rst
+
+.. include:: 01part/import_restframework.rst
