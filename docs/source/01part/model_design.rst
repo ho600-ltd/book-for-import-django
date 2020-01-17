@@ -153,4 +153,36 @@ FlowData 則紀錄每一筆感測資料。
     :align: center
     :width: 600px
 
-    如同 User, Group models ，EndSpot, FlowData 也可以作 CRUD 的操作
+    如同 User, Group models ，也可以對 EndSpot, FlowData 作 CRUD 操作
+
+.. figure:: 01part/create_end_spot.png
+    :align: center
+    :width: 600px
+
+    Topic 為必填欄位， Note 則隨意
+
+.. figure:: 01part/require_end_spot.png
+    :align: center
+    :width: 600px
+
+    建立 FlowData 紀錄時， End Spot object 為必填欄位
+
+.. figure:: 01part/bad_str.png
+    :align: center
+    :width: 300px
+
+    在 End Spot 下拉選單中，只秀出 id ，難以辦識
+
+.. code-block:: python
+
+    class EndSpot(models.Model):
+        def __str__(self):
+            return self.topic
+        
+在 EndSpot Model 中，加入 __str__ 函式，可自定偏好的顯示名稱( `2cc4f64 <https://github.com/ho600-ltd/examples-of-book-for-import-django/commit/2cc4f641ae76739c95064c4fc0c9c6148ce319f6>`_ )。
+
+.. figure:: 01part/good_name.png
+    :align: center
+    :width: 300px
+
+    可顯示 ho600/office/power1
