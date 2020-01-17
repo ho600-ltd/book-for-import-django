@@ -11,6 +11,12 @@
     import logging
     import paho.mqtt.client as mqtt
 
+    def post_data(*args, **kw):
+        """
+            How to program this function?
+        """
+        pass
+ 
     def on_connect(client, userdata, flags, rc):
         lg = logging.getLogger('info')
         lg.debug("Connected with result code: {}".format(rc))
@@ -20,12 +26,6 @@
         lg = logging.getLogger('info')
         lg.debug("{} {}".format(msg.topic, msg.payload))
         pos_data(msg)
- 
-    def post_data(*args, **kw):
-        """
-            How to program this function?
-        """
-        pass
  
     client = mqtt.Client()
     client.on_connect = on_connect
@@ -59,3 +59,5 @@
 .. include:: 01part/project_initialization.rst
 
 .. include:: 01part/django_admin_operation.rst
+
+.. include:: 01part/django_orm.rst
