@@ -1,10 +1,10 @@
 第一部份: 建立一個 RESTful API
 ===============================================================================
 
-欲解決問題: 接受 MQTT Subscriber 傳來的資料
+欲解決問題: MQTT Subscriber 函式所收到的資料要如何處理?
 -------------------------------------------------------------------------------
 
-有一個 MQTT 的 Subscriber 函式需要將資料送進遠端資料庫，函式如下:
+有一個 MQTT 的 Subscriber 函式需要將資料儲存或是送到遠端資料庫，函式如下:
 
 .. code-block:: python
 
@@ -23,7 +23,7 @@
  
     def post_data(*args, **kw):
         """
-            How this function will be programmed?
+            How to program this function?
         """
         pass
  
@@ -32,6 +32,8 @@
     client.on_message = on_message
     client.connect("my-iot.domain.com", 1883, 60)
     client.loop_forever()
+
+如何完成這個 post_data 函式?
 
 問題分析: post_data 該把資料寫到那裡?
 -------------------------------------------------------------------------------
